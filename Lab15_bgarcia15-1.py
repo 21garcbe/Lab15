@@ -13,12 +13,17 @@ import math
 
 def main():
     """Main function to plot an Archimedian spiral."""
-    t = 100
+    points = 100
 
     x_values = []
     y_values = []
-    #iterate through all 100 points (t) and calculate the x any y values for each point using spiral function
     
+    #iterate through all 100 points (t) and calculate the x any y values for each point using spiral function
+    for i in range(points):
+        t = i * 0.2
+        x, y = spiral(t)
+        x_values.append(x)
+        y_values.append(y)
 
 
     #set graph parameters and styling 
