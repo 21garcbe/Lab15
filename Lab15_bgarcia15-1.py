@@ -33,6 +33,9 @@ def main():
     plt.ylabel("Vertical Distance from Center")
     plt.grid()
     plt.axis("equal")
+
+    #save image as png
+    plt.savefig("archimedian_spiral.png")
     plt.show()
 
 
