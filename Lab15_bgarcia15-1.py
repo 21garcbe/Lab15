@@ -13,17 +13,34 @@ import math
 
 def main():
     """Main function to plot an Archimedian spiral."""
-    n = 100
+    t = 100
 
     x_values = []
     y_values = []
+    #iterate through all 100 points (t) and calculate the x any y values for each point using spiral function
+    
 
 
-   
+    #set graph parameters and styling 
+    plt.plot(x_values, y_values)
+    plt.title("Archimedian Spiral")
+    plt.xlabel("Horizontal Distance from Center")
+    plt.ylabel("Vertical Distance from Center")
+    plt.grid()
+    plt.axis("equal")
+    plt.show()
 
 
 def spiral(t):
     """Returns an x, y point on an Archimedian spiral."""
+    
+    a = 0
+    b = 0.05
+    r = a + b * t
+    x = r * math.sin(t)
+    y = r * math.cos(t)
+
+    return x, y
     
 
 if __name__ == "__main__":
