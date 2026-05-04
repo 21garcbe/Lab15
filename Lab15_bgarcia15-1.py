@@ -17,7 +17,7 @@ def main():
 
     x_values = []
     y_values = []
-    
+
     #iterate through all 100 points (t) and calculate the x any y values for each point using spiral function
     for i in range(points):
         t = i * 0.2
@@ -27,7 +27,7 @@ def main():
 
 
     #set graph parameters and styling 
-    plt.plot(x_values, y_values)
+    plt.plot(x_values, y_values, color="purple")
     plt.title("Archimedian Spiral")
     plt.xlabel("Horizontal Distance from Center")
     plt.ylabel("Vertical Distance from Center")
